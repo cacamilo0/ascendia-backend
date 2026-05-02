@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: ascendia
+
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE}
+
+server:
+  port: ${PORT:8080}
