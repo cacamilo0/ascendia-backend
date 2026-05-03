@@ -1,5 +1,6 @@
 package com.ascendia.ascendia.session;
 
+import com.ascendia.ascendia.common.Area;
 import com.ascendia.ascendia.user.UserEntity;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -27,5 +28,13 @@ public class TestSessionEntity {
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
     private UserEntity user;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private TestMode mode;
+
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private Area area;
 
 }

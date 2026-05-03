@@ -61,7 +61,6 @@ public class QuestionService {
 
         Area area = sessionQuestions.getFirst()
                 .getSession()
-                .getUser()
                 .getArea();
 
         SessionQuestionsResponse response = new SessionQuestionsResponse();

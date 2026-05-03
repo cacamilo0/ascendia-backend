@@ -7,8 +7,7 @@ import java.util.UUID;
 
 @Getter
 @Setter
-public class AnswerRequest {
-    private UUID sessionId;
-    private Long questionId;
-    private Long selectedOptionId;
+public class StartSessionRequest {
+    private UUID userId;
+    private TestMode mode;
 }

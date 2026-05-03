@@ -3,12 +3,9 @@ package com.ascendia.ascendia.session;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.UUID;
-
 @Getter
 @Setter
-public class AnswerRequest {
-    private UUID sessionId;
+public class TipResponse {
     private Long questionId;
-    private Long selectedOptionId;
+    private String tip;
 }

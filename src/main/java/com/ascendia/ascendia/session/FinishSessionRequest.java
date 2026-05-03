@@ -7,8 +7,6 @@ import java.util.UUID;
 
 @Getter
 @Setter
-public class AnswerRequest {
+public class FinishSessionRequest {
     private UUID sessionId;
-    private Long questionId;
-    private Long selectedOptionId;
 }
