@@ -31,6 +31,8 @@ public interface TestSessionQuestionRepository extends JpaRepository<TestSession
     """)
     List<Long> findQuestionIdsBySessionId(UUID sessionId);
 
-    Integer countBySessionId(UUID sessionId);
+    boolean existsBySessionIdAndQuestionId(UUID sessionId, Long questionId);
+
+    int countBySessionId(UUID sessionId);
 
 }

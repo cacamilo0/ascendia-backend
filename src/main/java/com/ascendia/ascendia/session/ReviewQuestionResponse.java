@@ -3,12 +3,13 @@ package com.ascendia.ascendia.session;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.UUID;
-
 @Getter
 @Setter
-public class AnswerRequest {
-    private UUID sessionId;
+public class ReviewQuestionResponse {
     private Long questionId;
+    private boolean correct;
+    private boolean omitted;
     private Long selectedOptionId;
+    private Long correctOptionId;
+    private String explanation;
 }

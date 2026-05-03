@@ -34,6 +34,13 @@ public class QuestionEntity {
     private PassageEntity passage;
 
     @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private Area area;
+
+    @Column(columnDefinition = "text")
+    private String explanation;
+
+    @Column(columnDefinition = "text")
+    private String tip;
 
 }
